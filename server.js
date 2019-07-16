@@ -11,7 +11,7 @@ router.get("/",function(req,res){
 
 app.use("/",router);
 
-app.listen(3000,function(){
+app.listen(80,function(){
   console.log(app.settings.env + ';__dirname:' + __dirname + ';');
   console.log('ScheduleApp UI Server started @Port : ' + this.address().port);
 });
